@@ -14,23 +14,23 @@
 <body>
 <center>
     <h1 class="btn btn-info heading">AI Image Classification</h1>
-    <h3 class="btn btn-success">Upload an image and click "Predict" to classify it using the Teachable Machine model.</h3>
+    <hr>
+    <h3 class="btn btn-info">Upload an image and click "Predict" to classify it using the Teachable Machine model.</h3>
     <br><br>
-    <!-- Updated label with 'for' attribute -->
     <label for="upload">Select Image:</label>
     <br>
-    <input type="file" id="upload" accept="image/*" aria-label="Upload Image">
+    <input class="btn btn-warning" type="file" id="upload" accept="image/*" aria-label="Upload Image">
     <br><br>
     <button id="predict" onclick="predict()" class="btn btn-success">Predict</button>
     <br><br>
-    <!-- Added alt attribute to image -->
     <img id="uploadedImage" src="" alt="Uploaded Image" style="display:none; max-width: 100%; height: auto;">
     <br>
-    <h3 id="prediction" class="btn btn-warning"></h3>
     <h3 id="status" class="btn btn-danger"></h3>
+    <br>
+    <h3 id="prediction" class="btn btn-warning"></h3>
 </center>
 <div id="copy_right_footer">
-    Developed By - Krishank
+    MedIn
 </div>
 <script src="main.js"></script>
 </body>

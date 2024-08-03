@@ -1,29 +1,112 @@
 body {
-    background-size: cover;
-    text-size-adjust: 100%; /* Replace deprecated -webkit-text-size-adjust */
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
 }
+
 .heading {
-    font-size: 23px;
-    width: 100%;
-    margin: 0%;
+    font-size: 2em;
+    font-weight: bold;
+    color: #e7e5e5;
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid #57616e;
+    display: inline-block;
 }
-#predict, #prediction, #status {
-    font-size: 18px;
+
+h3 {
+    margin: 20px 0;
+    background-color: #55a367;
 }
+
+label {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#upload {
+    margin-top: 10px;
+}
+
+#predict {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #55a367;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#predict:hover {
+    background-color: #218838;
+}
+
+#uploadedImage {
+    display: none;
+    margin-top: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+    border: 2px solid #67a9f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#prediction {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffc107;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+#status {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #b32e3b;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+}
+
 #copy_right_footer {
     position: fixed;
-    color: grey;
     bottom: 0;
     width: 100%;
-    background-color: ghostwhite;
+    background-color: #f8f9fa;
+    color: #6c757d;
     text-align: center;
-    line-height: 3;
+    padding: 10px 0;
+    font-size: 0.9em;
+    border-top: 1px solid #dee2e6;
 }
-#uploadedImage {
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 10px 10px 10px grey;
-}
-label {
-    color: white;
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.5em;
+    }
+
+    #predict {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    #uploadedImage {
+        max-width: 100%;
+    }
+
+    #prediction, #status {
+        font-size: 1em;
+    }
 }
