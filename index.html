@@ -38,5 +38,28 @@
     MedIn
 </div>
 <script src="main.js"></script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAuTu7Tq_BDpCOITy-hG8LEB8HoBJKqP0Q",
+    authDomain: "medin-a392d.firebaseapp.com",
+    projectId: "medin-a392d",
+    storageBucket: "medin-a392d.appspot.com",
+    messagingSenderId: "296628582289",
+    appId: "1:296628582289:web:202f891fcd2f9b66290c30",
+    measurementId: "G-9DHMZFYDMX"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
